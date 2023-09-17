@@ -62,93 +62,124 @@ const HomePage = () => {
   return (
       <MainLayout>
         <div>
-          <div className="section home py-4">
-            <div className="home-bg flex flex-row items-center justify-center">
-              <div className="flex flex-row items-center main-section gap-20">
-                <div className="home-main-container ">
-                  <h1 className="home-main-text">Te acompañamos en el proceso de rehabilitación para reincorporarte a tu vida diaria</h1>
-                  <div className="button-group">
-                      <ButtonGroup>
-                        <Button radius="full" color="default">Quiénes somos</Button>
-                        <Button radius="full" color="secondary">Tipo de Rehabilitación</Button>
-                      </ButtonGroup>
+          <section id="principal" className="home-section">
+            <div className="container mx-auto">
+              <div className="grid md:grid-cols-2 gap-20">
+                  <div className="home-text">
+                    <h3>Te acompañamos en el proceso de rehabilitación para reincorporarte a tu vida diaria</h3>
+                      <div className="button-group">
+                          <ButtonGroup>
+                            <Button radius="full" color="default">Quiénes somos</Button>
+                            <Button radius="full" color="secondary">Tipo de Rehabilitación</Button>
+                          </ButtonGroup>
+                      </div>
+                  </div>
+                  <div className="home-img">
+                    <Image 
+                      alt="logo" 
+                      src="/images/pngegg.png"
+                      width={400}
+                      height={400}/>
                   </div>
                 </div>
-                <div className="home-img flex-1">
+            </div>
+          </section>
+
+          <section id="diferenciadores" className="diferenciadores-section">
+            <div className="container mx-auto">
+              <div className="grid md:grid-cols-2 gap-20">
+                <div className="diferenciadores-img">
                   <Image 
-                    alt="logo" 
-                    src="/images/pngegg.png"
                     width={400}
-                    height={400}/>
+                    height={400}
+                    alt="logo" 
+                    src="/images/pngegg.png"/>
+                </div>
+                <div className="diferenciadores-text">
+                  <h3>Nuestros diferenciadores</h3>
+                  <p className="ft-36">Somos el mejor centro de Rehabilitación Física y Medicina del Deporte en México.</p>
+                  <div className="ft-14 flex flex-col">
+                    <p>Nuestros protocolos están basados en evidencia científica respaldados por fisioterapeutas expertos reconocidos a nivel mundial.</p>
+                    <p>Trabajamos de manera conjunta con tu médico especialista en beneficio de tu recuperación.</p>
+                    <p>Todos nuestros fisioterapeutas están en capacitación y actualización constante con expertos a nivel mundial.</p>
+                  </div>
+                  <Button radius="full" color="secondary">Quiénes somos</Button>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div className="section dif py-4">
-            <div className="container">
-              <div className="dif-img">
-                <Image 
-                  alt="logo" 
-                  src="/images/pngegg.png"/>
-              </div>
-              <div className="dif-text text-justify">
-                <h2>Nuestros diferenciadores</h2>
-                <p className="ft-36">Somos el mejor centro de Rehabilitación Física y Medicina del Deporte en México.</p>
-                <div className="ft-14 flex flex-col">
-                  <p>Nuestros protocolos están basados en evidencia científica respaldados por fisioterapeutas expertos reconocidos a nivel mundial.</p>
-                  <p>Trabajamos de manera conjunta con tu médico especialista en beneficio de tu recuperación.</p>
-                  <p>Todos nuestros fisioterapeutas están en capacitación y actualización constante con expertos a nivel mundial.</p>
-                </div>
-                <Button radius="full" color="secondary">Quiénes somos</Button>
-              </div>
-            </div>
-          </div>
-
-          <div className="section rehabilitation h-auto py-4">
-            <div className="flex flex-col">
-              <p className="rehabilitation-title text-center my-20">Tenemos lo que necesitas</p>
-              <div className="grid grid-cols-4 gap-4">
-                {
-                  rehabilitationTypes.map(({name, text, icon})=> (
-                    <Card className="card">
-                      <CardHeader className="justify-center">
-                        <p className="card-header">{name}</p>
-                      </CardHeader>
-                      <CardBody className="items-center gap-4">
-                        <div className="icon">
-                          <FontAwesomeIcon
-                            size="2x"
-                            color="white"
-                            icon={icon}
-                          />
-                        </div>
-                        <p className="text-center">{text}</p>
-                      </CardBody>
-                      <CardFooter className="flex justify-center">
-                        <Button 
-                          radius="full" 
-                          color="default"
-                          size="lg"
-                          >Más información</Button>
-                      </CardFooter>
-                    </Card>
-                  ))
-                }
-              </div>
-            </div>
-          </div>
-
-          <div className="section testimonios">
+          <section id="rehabilitaciones" className="rehabilitaciones-section">
+            <div className="container mx-auto">
               <div className="flex flex-col">
-                <div>
-                  <p>Agenda una cita en nuestra Clínica CEFIRE</p>
-                </div>
-                <div className="flex flex-row gap-20">
-                  d
+                <h3 className="rehabilitation-title text-center my-20">Tenemos lo que necesitas</h3>
+                <div className="grid grid-cols-4 gap-4">
+                  {
+                    rehabilitationTypes.map(({name, text, icon})=> (
+                      <Card className="card">
+                        <CardHeader className="justify-center">
+                          <p className="card-header">{name}</p>
+                        </CardHeader>
+                        <CardBody className="items-center gap-4">
+                          <div className="icon">
+                            <FontAwesomeIcon
+                              size="2x"
+                              color="white"
+                              icon={icon}
+                            />
+                          </div>
+                          <p className="text-center">{text}</p>
+                        </CardBody>
+                        <CardFooter className="flex justify-center">
+                          <Button 
+                            radius="full" 
+                            color="default"
+                            size="lg"
+                            >Más información</Button>
+                        </CardFooter>
+                      </Card>
+                    ))
+                  }
                 </div>
               </div>
-          </div>
+            </div>
+          </section>
+
+          <section id="contacto" className="contacto-section">
+              <div className="container mx-auto">
+                <div className="flex flex-col">
+                  <div className="contacto-text-container my-20">
+                    <h3>CONTÁCTANOS</h3>
+                    <p>¿Tienes alguna duda?</p>
+                    <p>¡Escribenos!</p>
+                  </div>
+                  <div className="contacto-form-container grid grid-cols-1 md:grid-cols-2">
+                    <div className="">
+                      <Image 
+                        width={400}
+                        height={400}
+                        alt="logo" 
+                        src="/images/pngegg.png"/>
+                    </div>
+                    <div className="">
+                      <form className="form flex flex-col items-center justify-between">
+                          <input type="text" placeholder="Nombre"/>
+                          <input type="email" placeholder="Email"/>
+                          <input type="text" placeholder="Número de telefono"/>
+                          <textarea name="" placeholder="Tu mensaje" rows={4}></textarea>
+                          <Button className="w-full" radius="full" color="secondary">Enviar</Button>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <footer className="footer">
+              <div className="section-padding footer-container bg-primary text-white">
+                <p>© 2023 Clínica Cefire | Todos los derechos reservados | Erick Cruz Diseño de paginas web</p>
+              </div>
+          </footer>
 
         </div>
       </MainLayout>
