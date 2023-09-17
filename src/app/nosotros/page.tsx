@@ -1,6 +1,10 @@
+import { MainLayout } from "@/layouts/MainLayout";
+
 const AboutPage = () => {
   return (
-    <div>About</div>
+    <MainLayout>
+      <div>About</div>
+    </MainLayout>
   )
 }
 

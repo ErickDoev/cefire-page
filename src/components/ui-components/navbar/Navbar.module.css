@@ -1,0 +1,19 @@
+.navbar{
+    background-color: transparent;
+    height: 90px;
+}
+
+.navbar-item{
+    padding: 5px 30px;
+    color: white;
+}
+
+.navbar-item:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.active{
+    color: white;
+    border-bottom: 2px solid white;
+}

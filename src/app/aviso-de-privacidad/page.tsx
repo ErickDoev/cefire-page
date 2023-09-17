@@ -1,7 +1,10 @@
+import { MainLayout } from "@/layouts/MainLayout";
 
 const PrivacyNotePage = () => {
   return (
-    <div>PrivacyNotePage</div>
+    <MainLayout>
+      <div>Aviso de privacidad</div>
+    </MainLayout>
   )
 }
 
