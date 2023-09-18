@@ -60,7 +60,7 @@ const rehabilitationTypes = [
 
 const HomePage = () => {
     return (
-        <div>
+        <div className="dashboard">
             <section id="principal" className={styles['home-section']}>
                 <div className="container mx-auto">
                     <div className="grid md:grid-cols-2 gap-20">

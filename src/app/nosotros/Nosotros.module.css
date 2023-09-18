@@ -1,0 +1,60 @@
+.nosotros {
+    width: 100%;
+    height: 100vh;
+}
+/* Common */
+
+.nosotros-section,
+.info-section {
+    width: 100%;
+}
+
+/* Nosotros */
+.nosotros-section {
+    background-image: url('/images/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros-text-container h3 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 46px;
+}
+
+/* Info */
+
+.info-section {
+    padding: 60px;
+}
+
+.info-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.info-text-container h3 {
+    font-family: 'Poppins', Sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 60px;
+}
+
+.info-bg-gray {
+    background-color: rgb(247, 247, 252);
+}
