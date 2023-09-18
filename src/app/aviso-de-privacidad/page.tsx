@@ -1,9 +1,9 @@
-import { ContactForm, Footer } from '@/components/shared';
+import { ContactForm, Footer, HeaderSection } from '@/components/shared';
 
 const PrivacyNotePage = () => {
     return (
         <div>
-            Aviso de privacidad
+            <HeaderSection title="Aviso de privacidad" />
             <ContactForm />
             <Footer />
         </div>

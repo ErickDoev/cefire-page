@@ -1,9 +1,13 @@
-import React from 'react'
+import { ContactForm, Footer, HeaderSection } from '@/components/shared';
 
 const ServiciosPage = () => {
-  return (
-        <div>Servicios page</div>
-  )
-}
+    return (
+        <div>
+            <HeaderSection title="Servicios" />
+            <ContactForm />
+            <Footer />
+        </div>
+    );
+};
 
-export default ServiciosPage
+export default ServiciosPage;

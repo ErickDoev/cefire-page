@@ -63,29 +63,34 @@ const HomePage = () => {
     return (
         <div className="dashboard">
             <section id="principal" className={styles['home-section']}>
-                <div className="container mx-auto">
-                    <div className="grid md:grid-cols-2 gap-20">
-                        <div className={styles['home-text-container']}>
-                            <h3>
-                                Te acompañamos en el proceso de rehabilitación
-                                para reincorporarte a tu vida diaria
-                            </h3>
-                            <div className="button-group">
-                                <Button radius="full" color="primary">
-                                    Quiénes somos
-                                </Button>
-                                <Button radius="full" color="secondary">
-                                    Tipo de Rehabilitación
-                                </Button>
+                <div className={styles['principal-bg-blur']}>
+                    <div className="container max-auto">
+                        <div className="grid md:grid-cols-2 gap-20">
+                            <div className={styles['home-text-container']}>
+                                <h3>
+                                    Te acompañamos en el proceso de
+                                    rehabilitación para reincorporarte a tu vida
+                                    diaria
+                                </h3>
+                                <div
+                                    className={styles['home-buttons-container']}
+                                >
+                                    <Button radius="full" color="primary">
+                                        Quiénes somos
+                                    </Button>
+                                    <Button radius="full" color="secondary">
+                                        Tipo de Rehabilitación
+                                    </Button>
+                                </div>
                             </div>
-                        </div>
-                        <div className={styles['home-img-container']}>
-                            <Image
-                                alt="logo"
-                                src="/images/pngegg.png"
-                                width={400}
-                                height={400}
-                            />
+                            <div className={styles['home-img-container']}>
+                                <Image
+                                    alt="logo"
+                                    src="/images/pngegg.png"
+                                    width={400}
+                                    height={400}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,7 +151,7 @@ const HomePage = () => {
                         <h3
                             className={`${styles['rehabilitation-title']} text-center`}
                         >
-                            Tenemos lo que necesitas
+                            Tipos de rehabilitación
                         </h3>
                         <div className="grid grid-cols-4 gap-4">
                             {rehabilitationTypes.map(({ name, text, icon }) => (

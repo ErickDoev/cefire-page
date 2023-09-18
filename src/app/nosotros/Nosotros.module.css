@@ -4,33 +4,8 @@
 }
 /* Common */
 
-.nosotros-section,
 .info-section {
     width: 100%;
-}
-
-/* Nosotros */
-.nosotros-section {
-    background-image: url('/images/home.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nosotros-text-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nosotros-text-container h3 {
-    color: white;
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 46px;
 }
 
 /* Info */

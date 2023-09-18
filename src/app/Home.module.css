@@ -1,6 +1,4 @@
 /* Common */
-.diferenciadores-section,
-.home-section,
 .rehabilitaciones-section {
     height: 100vh;
 }
@@ -13,12 +11,26 @@
 
 /* Home */
 .home-section {
-    background-image: url('/images/home.jpg');
+    height: 80vh;
+    background-image: url('/images/cefire-home.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
+}
+
+.principal-bg-blur {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.home-buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
 }
 
 .home-text-container {
@@ -43,10 +55,12 @@
 
 /* Diferenciadores */
 .diferenciadores-section {
-    background-color: rgb(28, 2, 58);
+    height: auto;
+    background-color: rgb(247, 247, 252);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 90px 60px;
 }
 
 .diferenciadores-img {
@@ -62,7 +76,7 @@
     font-weight: bold;
     line-height: 35px;
     gap: 24px;
-    color: white;
+    color: black;
 }
 
 .ft-14 {
@@ -75,7 +89,7 @@
 
 .rehabilitaciones-section {
     height: auto;
-    padding: 60px;
+    padding: 90px 60px;
 }
 
 .rehabilitation-title {

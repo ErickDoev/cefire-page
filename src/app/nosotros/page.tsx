@@ -1,27 +1,30 @@
 import { Image } from '@nextui-org/image';
 import styles from './Nosotros.module.css';
-import { ContactForm, Footer } from '@/components/shared';
+import { ContactForm, Footer, HeaderSection } from '@/components/shared';
 
 const AboutPage = () => {
     return (
         <div className={styles['nosotros']}>
-            <section id="nosotros" className={styles['nosotros-section']}>
-                <div className="container mx-auto">
-                    <div className="grid md:grid-cols-2 gap-20">
-                        <div className="nosotros-img-container">
-                            <Image
-                                width={400}
-                                height={400}
-                                alt="logo"
-                                src="/images/pngegg.png"
-                            />
-                        </div>
-                        <div className={styles['nosotros-text-container']}>
-                            <h3>Sobre nosotros</h3>
+            {/* <section id="nosotros" className={styles['nosotros-section']}>
+                <div className={styles['nosotros-bg-blur']}>
+                    <div className="container mx-auto">
+                        <div className="grid md:grid-cols-2 gap-20">
+                            <div className="nosotros-img-container">
+                                <Image
+                                    width={400}
+                                    height={400}
+                                    alt="logo"
+                                    src="/images/pngegg.png"
+                                />
+                            </div>
+                            <div className={styles['nosotros-text-container']}>
+                                <h3>Sobre nosotros</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
+            <HeaderSection title="Nosotros" />
 
             <section
                 className={`${styles['info-section']} ${styles['info-bg-gray']}`}
