@@ -1,5 +1,5 @@
 
-import { Navbar } from "@/components/ui-components";
+import { NavbarComponent } from "@/components/ui-components";
 import { FC } from "react";
 import '../app/globals.css';
 interface Props {
@@ -10,7 +10,7 @@ interface Props {
 export const MainLayout: FC<Props> = ({ children, title }) => {
   return (
       <div className="relative">
-        <Navbar />
+        <NavbarComponent />
         { children }
       </div>
   )

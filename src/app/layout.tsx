@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Poppins, Roboto, Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import { Providers } from './providers'
 
 const poppins = Poppins({

@@ -69,7 +69,7 @@ const HomePage = () => {
                     <h3>Te acompañamos en el proceso de rehabilitación para reincorporarte a tu vida diaria</h3>
                       <div className="button-group">
                           <ButtonGroup>
-                            <Button radius="full" color="default">Quiénes somos</Button>
+                            <Button radius="full" color="primary">Quiénes somos</Button>
                             <Button radius="full" color="secondary">Tipo de Rehabilitación</Button>
                           </ButtonGroup>
                       </div>
@@ -103,7 +103,7 @@ const HomePage = () => {
                     <p>Trabajamos de manera conjunta con tu médico especialista en beneficio de tu recuperación.</p>
                     <p>Todos nuestros fisioterapeutas están en capacitación y actualización constante con expertos a nivel mundial.</p>
                   </div>
-                  <Button radius="full" color="secondary">Quiénes somos</Button>
+                  <Button radius="full" color="primary">Quiénes somos</Button>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ const HomePage = () => {
                         <CardFooter className="flex justify-center">
                           <Button 
                             radius="full" 
-                            color="default"
+                            color="secondary"
                             size="lg"
                             >Más información</Button>
                         </CardFooter>
@@ -167,7 +167,7 @@ const HomePage = () => {
                           <input type="email" placeholder="Email"/>
                           <input type="text" placeholder="Número de telefono"/>
                           <textarea name="" placeholder="Tu mensaje" rows={4}></textarea>
-                          <Button className="w-full" radius="full" color="secondary">Enviar</Button>
+                          <Button className="w-full" radius="full" color="primary">Enviar</Button>
                         </form>
                     </div>
                   </div>

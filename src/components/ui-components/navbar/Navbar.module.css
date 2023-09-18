@@ -14,6 +14,17 @@
 }
 
 .active{
+    color: rebeccapurple;
+}
+
+.deactive{
     color: white;
-    border-bottom: 2px solid white;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.nav-wrap{
+    background-color: transparent;
 }

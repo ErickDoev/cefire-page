@@ -9,7 +9,9 @@ config.autoAddCss = false;
 export function Providers({children}: { children: React.ReactNode }) {
   return (
     <NextUIProvider>
-      {children}
+      <main className="blue-light">
+        {children}
+      </main>
     </NextUIProvider>
   )
 }

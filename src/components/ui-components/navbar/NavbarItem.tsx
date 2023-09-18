@@ -1,27 +1,29 @@
 'use client'
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FC } from 'react';
+import {
+  NavbarItem
+} from "@nextui-org/react";
 import styles from './Navbar.module.css';
+import Link from 'next/link';
 
 interface Props {
     path: string;
     name: string;
 }
 
-const NavbarItem: FC<Props> = ({path, name}) => {
+const NavbarItemComponent: FC<Props> = ({path, name}) => {
   
   const pathname = usePathname()
-  console.log(pathname);
-
+  
   return (
-    <div className={`${path===pathname ? styles.active : ''} ${styles['navbar-item']}`}>
-        <Link href={path}>
-            {name}
-        </Link>
-    </div>
+    <NavbarItem>
+      <Link href={ path } className={`${path===pathname ? styles.active : styles.deactive} `}>
+        { name }
+      </Link>
+    </NavbarItem>
   )
 }
 
-export default NavbarItem
+export default NavbarItemComponent;
