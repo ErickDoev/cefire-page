@@ -1,8 +1,8 @@
-import { MainLayout } from "@/layouts/MainLayout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
 import { Card, CardBody, CardHeader, CardFooter } from "@nextui-org/card";
+import styles from '@/app/Home.module.css';
 
 import {
   faBone,
@@ -14,6 +14,7 @@ import {
   faRadiationAlt,
   faHeart
 } from "@fortawesome/free-solid-svg-icons";
+import { RehabilitationCard } from "@/components/home";
 
 const rehabilitationTypes = [
   {
@@ -60,7 +61,6 @@ const rehabilitationTypes = [
 
 const HomePage = () => {
   return (
-      <MainLayout>
         <div>
           <section id="principal" className="home-section">
             <div className="container mx-auto">
@@ -68,10 +68,8 @@ const HomePage = () => {
                   <div className="home-text">
                     <h3>Te acompañamos en el proceso de rehabilitación para reincorporarte a tu vida diaria</h3>
                       <div className="button-group">
-                          <ButtonGroup>
-                            <Button radius="full" color="primary">Quiénes somos</Button>
-                            <Button radius="full" color="secondary">Tipo de Rehabilitación</Button>
-                          </ButtonGroup>
+                          <Button radius="full" color="primary">Quiénes somos</Button>
+                          <Button radius="full" color="secondary">Tipo de Rehabilitación</Button>
                       </div>
                   </div>
                   <div className="home-img">
@@ -116,28 +114,7 @@ const HomePage = () => {
                 <div className="grid grid-cols-4 gap-4">
                   {
                     rehabilitationTypes.map(({name, text, icon})=> (
-                      <Card className="card">
-                        <CardHeader className="justify-center">
-                          <p className="card-header">{name}</p>
-                        </CardHeader>
-                        <CardBody className="items-center gap-4">
-                          <div className="icon">
-                            <FontAwesomeIcon
-                              size="2x"
-                              color="white"
-                              icon={icon}
-                            />
-                          </div>
-                          <p className="text-center">{text}</p>
-                        </CardBody>
-                        <CardFooter className="flex justify-center">
-                          <Button 
-                            radius="full" 
-                            color="secondary"
-                            size="lg"
-                            >Más información</Button>
-                        </CardFooter>
-                      </Card>
+                      <RehabilitationCard name={name} text={text} icon={icon} />
                     ))
                   }
                 </div>
@@ -182,7 +159,6 @@ const HomePage = () => {
           </footer>
 
         </div>
-      </MainLayout>
   )
 }
 

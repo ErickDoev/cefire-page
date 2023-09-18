@@ -46,20 +46,6 @@ html, body {
   align-items: center;
 }
 
-.card{
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.card:hover .icon{
-  background-color: red;
-}
-
-.card-header{
-  font-size: 25px;
-  font-weight: normal;
-}
-
 .rehabilitation-title, .contact-title{
   font-size: 36px;
   font-weight: bold;

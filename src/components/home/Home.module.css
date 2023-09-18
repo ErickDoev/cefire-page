@@ -1,0 +1,23 @@
+.card{
+    font-size: 14px;
+    font-weight: 400;
+}
+  
+.card:hover .icon{
+    background-color: red;
+}
+
+.card-header{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.icon{
+    background-color: #3366FF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
