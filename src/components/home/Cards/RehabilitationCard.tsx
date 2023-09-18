@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card, CardBody, CardHeader, CardFooter } from "@nextui-org/card";
 import { Button } from "@nextui-org/button";
 import { FC } from 'react';
-import styles from '../Home.module.css';
+import styles from './Cards.module.css';
 
 interface Props {
     name: string;

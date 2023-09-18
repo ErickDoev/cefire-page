@@ -1,30 +1,30 @@
-.navbar{
-    background-color: transparent;
-    height: 90px;
+.navbar {
+  background-color: transparent;
+  height: 90px;
 }
 
-.navbar-item{
-    padding: 5px 30px;
-    color: white;
+.navbar-item {
+  padding: 5px 30px;
+  color: white;
 }
 
-.navbar-item:hover{
-    color: white;
-    border-bottom: 2px solid white;
+.navbar-item:hover {
+  color: white;
+  border-bottom: 2px solid white;
 }
 
-.active{
-    color: rebeccapurple;
+.active {
+  color: rebeccapurple;
 }
 
-.deactive{
-    color: white;
+.deactive {
+  color: white;
 }
 
-.blue{
-    background-color: blue;
+.blue {
+  background-color: blue;
 }
 
-.nav-wrap{
-    background-color: transparent;
+.nav-wrap {
+  background-color: transparent;
 }

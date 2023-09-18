@@ -1,0 +1,156 @@
+/* Common */
+.diferenciadores-section,
+.home-section,
+.rehabilitaciones-section {
+    height: 100vh;
+}
+
+.home-subtitle {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+/* Home */
+.home-section {
+    background-image: url('/images/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 35px;
+    gap: 24px;
+}
+
+.home-text-container h3 {
+    color: white;
+}
+
+.home-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Diferenciadores */
+.diferenciadores-section {
+    background-color: rgb(28, 2, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diferenciadores-img {
+    display: flex;
+    align-items: center;
+}
+
+.diferenciadores-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 35px;
+    gap: 24px;
+    color: white;
+}
+
+.ft-14 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 35px;
+    gap: 24px;
+}
+/* Rehabilitaciones */
+
+.rehabilitaciones-section {
+    height: auto;
+    padding: 60px;
+}
+
+.rehabilitation-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+/* Contacto */
+.contacto-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    background-color: rgb(247, 247, 252);
+}
+
+.contacto-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-text-container h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.contacto-form-container {
+    border-radius: 15px;
+    padding: 50px 60px;
+    gap: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-form {
+    width: 600px;
+    height: 100%;
+}
+
+.contacto-input,
+.contacto-textarea {
+    width: 100%;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+/* Testimonios */
+
+.testimonios-text-container {
+    padding-top: 1px;
+}
+
+.testimonios-header-container {
+    width: 100%;
+    height: 200px;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios-header-container p {
+    color: white;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 40px;
+}
+
+.testimonios-text {
+    padding: 50px 0;
+}
+
+.footer {
+    background-color: rgb(28, 2, 58);
+}
