@@ -14,6 +14,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { RehabilitationCard } from '@/components/home';
 import { TextCarousel } from '@/components/home/carousel/TextCarousel';
+import { ContactForm, Footer } from '@/components/shared';
 
 const rehabilitationTypes = [
     {
@@ -184,60 +185,9 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section id="contacto" className={styles['contacto-section']}>
-                <div className="container mx-auto">
-                    <div className="flex flex-col">
-                        <div className={`${styles['contacto-text-container']}`}>
-                            <h3>CONTÁCTANOS</h3>
-                            <p>¿Tienes alguna duda?</p>
-                            <p>¡Escribenos!</p>
-                        </div>
-                        <div className={`${styles['contacto-form-container']}`}>
-                            <form
-                                className={`${styles['contacto-form']} flex flex-col items-center justify-between gap-6`}
-                            >
-                                <input
-                                    className={`${styles['contacto-input']}`}
-                                    type="text"
-                                    placeholder="Nombre"
-                                />
-                                <input
-                                    className={`${styles['contacto-input']}`}
-                                    type="email"
-                                    placeholder="Email"
-                                />
-                                <input
-                                    className={`${styles['contacto-input']}`}
-                                    type="text"
-                                    placeholder="Número de telefono"
-                                />
-                                <textarea
-                                    className={`${styles['contacto-textarea']}`}
-                                    name=""
-                                    placeholder="Tu mensaje"
-                                    rows={4}
-                                ></textarea>
-                                <Button
-                                    className="w-full"
-                                    radius="full"
-                                    color="primary"
-                                >
-                                    Enviar
-                                </Button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <ContactForm />
 
-            <footer className={styles['footer']}>
-                <div className="section-padding footer-containet text-white">
-                    <p>
-                        © 2023 Clínica Cefire | Todos los derechos reservados |
-                        Erick Cruz Diseño de paginas web
-                    </p>
-                </div>
-            </footer>
+            <Footer />
         </div>
     );
 };

@@ -84,47 +84,6 @@
     margin-bottom: 36px;
 }
 
-/* Contacto */
-.contacto-section {
-    display: flex;
-    justify-content: center;
-    padding: 60px 0;
-    background-color: rgb(247, 247, 252);
-}
-
-.contacto-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.contacto-text-container h3 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.contacto-form-container {
-    border-radius: 15px;
-    padding: 50px 60px;
-    gap: 24px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.contacto-form {
-    width: 600px;
-    height: 100%;
-}
-
-.contacto-input,
-.contacto-textarea {
-    width: 100%;
-    border-radius: 15px;
-    padding: 8px;
-}
-
 /* Testimonios */
 
 .testimonios-text-container {
@@ -149,8 +108,4 @@
 
 .testimonios-text {
     padding: 50px 0;
-}
-
-.footer {
-    background-color: rgb(28, 2, 58);
 }
