@@ -154,13 +154,16 @@ const HomePage = () => {
                             Tipos de rehabilitación
                         </h3>
                         <div className="grid grid-cols-4 gap-4">
-                            {rehabilitationTypes.map(({ name, text, icon }) => (
-                                <RehabilitationCard
-                                    name={name}
-                                    text={text}
-                                    icon={icon}
-                                />
-                            ))}
+                            {rehabilitationTypes.map(
+                                ({ name, text, icon }, index) => (
+                                    <RehabilitationCard
+                                        key={`${name}-${index}`}
+                                        name={name}
+                                        text={text}
+                                        icon={icon}
+                                    />
+                                )
+                            )}
                         </div>
                     </div>
                 </div>
