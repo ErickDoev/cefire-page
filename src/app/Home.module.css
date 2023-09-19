@@ -1,13 +1,4 @@
 /* Common */
-.rehabilitaciones-section {
-    height: 100vh;
-}
-
-.home-subtitle {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 36px;
-}
 
 /* Home */
 .home-section {
@@ -68,7 +59,7 @@
     align-items: center;
 }
 
-.diferenciadores-text {
+.diferenciadores-text-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -76,7 +67,10 @@
     font-weight: bold;
     line-height: 35px;
     gap: 24px;
-    color: black;
+}
+
+.diferenciadores-text-container h3 {
+    color: royalblue;
 }
 
 .ft-14 {
@@ -88,6 +82,7 @@
 /* Rehabilitaciones */
 
 .rehabilitaciones-section {
+    height: 100vh;
     height: auto;
     padding: 90px 60px;
 }
@@ -96,12 +91,20 @@
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 36px;
+    color: royalblue;
 }
 
 /* Testimonios */
 
 .testimonios-text-container {
     padding-top: 1px;
+}
+
+.testimonios-text-container h3{
+    color: royalblue;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 36px;
 }
 
 .testimonios-header-container {

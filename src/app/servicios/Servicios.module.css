@@ -1,1 +1,17 @@
 /* Servicios */
+
+.servicios-section{
+    padding: 60px 180px;
+}
+
+.servicios-text-container{
+    display: flex;
+    justify-content: center;
+}
+
+.servicios-text-container h3{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: royalblue;
+}

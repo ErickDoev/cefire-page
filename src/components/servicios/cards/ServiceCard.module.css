@@ -1,11 +1,8 @@
-.servicios-section {
-    padding: 60px;
-}
-
 .card-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 1rem;
 }
 
 .card-img-container {
@@ -19,8 +16,14 @@
     flex: 1;
 }
 
-.card-text-container h3 {
+.card-text-container h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .card-text-container p {
+    font-size: 16px;
+    font-weight:200;
+    margin: 0;
 }

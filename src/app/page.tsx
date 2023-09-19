@@ -110,7 +110,7 @@ const HomePage = () => {
                                 src="/images/pngegg.png"
                             />
                         </div>
-                        <div className={styles['diferenciadores-text']}>
+                        <div className={styles['diferenciadores-text-container']}>
                             <h3>Nuestros diferenciadores</h3>
                             <p className="ft-36">
                                 Somos el mejor centro de Rehabilitación Física y

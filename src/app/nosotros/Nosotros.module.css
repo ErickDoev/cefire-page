@@ -4,14 +4,12 @@
 }
 /* Common */
 
-.info-section {
-    width: 100%;
-}
 
 /* Info */
 
 .info-section {
     padding: 60px;
+    width: 100%;
 }
 
 .info-text-container {
@@ -28,6 +26,7 @@
     font-weight: bold;
     line-height: 20px;
     margin-bottom: 60px;
+    color: royalblue;
 }
 
 .info-bg-gray {

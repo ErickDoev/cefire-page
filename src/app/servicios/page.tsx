@@ -49,12 +49,15 @@ const ServiciosPage = () => {
     return (
         <div>
             <HeaderSection title="Servicios" />
-
             <section id="servicios" className={styles['servicios-section']}>
                 <div className="container mx-auto">
                     <div className="flex flex-col gap-16">
-                        {services.map((service) => (
+                        <div className={styles['servicios-text-container']}>
+                            <h3>Servicios de Rehabilitación</h3>
+                        </div>
+                        {services.map((service, i) => (
                             <ServiceCard
+                                key={`${service.title} -${i}`}
                                 title={service.title}
                                 text={service.text}
                                 image={service.img}
