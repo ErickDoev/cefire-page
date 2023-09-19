@@ -1,0 +1,26 @@
+.servicios-section {
+    padding: 60px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-img-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid royalblue;
+}
+
+.card-text-container {
+    flex: 1;
+}
+
+.card-text-container h3 {
+}
+
+.card-text-container p {
+}
