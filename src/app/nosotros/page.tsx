@@ -1,6 +1,6 @@
 import { Image } from '@nextui-org/image';
 import styles from './Nosotros.module.css';
-import { ContactForm, Footer, HeaderSection } from '@/components/shared';
+import { ContactForm, HeaderSection } from '@/components/shared';
 
 const AboutPage = () => {
     return (
@@ -60,8 +60,6 @@ const AboutPage = () => {
             </section>
 
             <ContactForm />
-
-            <Footer />
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import { ServiceCard } from '@/components/servicios';
-import { ContactForm, Footer, HeaderSection } from '@/components/shared';
+import { ContactForm, HeaderSection } from '@/components/shared';
 import styles from './Servicios.module.css';
 
 const services = [
@@ -68,7 +68,6 @@ const ServiciosPage = () => {
             </section>
 
             <ContactForm />
-            <Footer />
         </div>
     );
 };

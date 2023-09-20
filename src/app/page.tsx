@@ -15,6 +15,7 @@ import {
 import { RehaCard } from '@/components/home';
 import { TextCarousel } from '@/components/home/carousel/TextCarousel';
 import { ContactForm, Footer } from '@/components/shared';
+import { FooterComponent } from '@/components/ui-components';
 
 const rehabilitationTypes = [
     {
@@ -196,8 +197,6 @@ const HomePage = () => {
             </section>
 
             <ContactForm />
-
-            <Footer />
         </div>
     );
 };

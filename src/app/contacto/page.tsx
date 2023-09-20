@@ -1,4 +1,4 @@
-import { ContactForm, Footer, HeaderSection } from '@/components/shared';
+import { ContactForm, HeaderSection } from '@/components/shared';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faPhone,
@@ -36,7 +36,6 @@ const ContactoPage = () => {
                 </div>
             </section>
             <ContactForm />
-            <Footer />
         </div>
     );
 };

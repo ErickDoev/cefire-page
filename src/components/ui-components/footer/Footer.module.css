@@ -1,0 +1,32 @@
+.footer-section {
+    padding: 60px 0 0 0;
+}
+
+.footer-info-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.footer-info-container p {
+    font-size: 14px;
+}
+
+.footer-copy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+    font-size: 12px;
+}
+
+.footer-bg-gray {
+    color: #acc1d0;
+}
+
+.footer-link p {
+    cursor: pointer;
+}
+
+.footer-link p:hover {
+    color: #acc1d0;
+}

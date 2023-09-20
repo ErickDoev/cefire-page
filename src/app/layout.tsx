@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-import { NavbarComponent } from '@/components/ui-components';
+import { FooterComponent, NavbarComponent } from '@/components/ui-components';
 import { Providers } from './providers';
 
 const poppins = Poppins({
@@ -25,6 +25,7 @@ export default function RootLayout({
                 <Providers>
                     <NavbarComponent />
                     {children}
+                    <FooterComponent />
                 </Providers>
             </body>
         </html>
