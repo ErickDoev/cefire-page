@@ -10,7 +10,7 @@ interface Props {
     text: string;
 }
 
-export const RehaCard: FC<Props> = ({ name, icon, text }) => {
+export const RehaCard: FC<Props> = ({ name, text, icon }) => {
     return (
         <Card className={styles['card']}>
             <CardHeader className="justify-center">
