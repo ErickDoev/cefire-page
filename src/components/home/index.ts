@@ -1,2 +1,2 @@
 export * from './carousel';
-export * from './cards';
+export * from './card';
