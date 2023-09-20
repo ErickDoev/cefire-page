@@ -1,2 +1,2 @@
 export * from './carousel/TextCarousel';
-export * from './cards/RehaCard';
+//export * from './cards/RehaCard';
