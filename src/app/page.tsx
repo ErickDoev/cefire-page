@@ -12,7 +12,7 @@ import {
     faRadiationAlt,
     faHeart
 } from '@fortawesome/free-solid-svg-icons';
-//import { RehaCard } from '@/components/home';
+import { RehaCard } from '@/components/home';
 import { TextCarousel } from '@/components/home/carousel/TextCarousel';
 import { ContactForm, Footer } from '@/components/shared';
 
@@ -156,7 +156,7 @@ const HomePage = () => {
                             Tipos de rehabilitación
                         </h3>
                         <div className="grid grid-cols-4 gap-4">
-                            {/* {rehabilitationTypes.map(
+                            {rehabilitationTypes.map(
                                 ({ name, text, icon }, index) => (
                                     <RehaCard
                                         key={`${name}-${index}`}
@@ -165,7 +165,7 @@ const HomePage = () => {
                                         icon={icon}
                                     />
                                 )
-                            )} */}
+                            )}
                         </div>
                     </div>
                 </div>
