@@ -9,7 +9,6 @@ import { Pagination } from 'swiper/modules';
 import styles from './Carousel.module.css';
 
 export const TextCarousel = () => {
-    const hola = '';
     return (
         <>
             <Swiper

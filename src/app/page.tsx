@@ -66,7 +66,7 @@ const HomePage = () => {
                 <div className={styles['principal-bg-blur']}>
                     <div className="container max-auto">
                         <div className="grid md:grid-cols-2 gap-20">
-                            <div className={styles['home-text-container']}>
+                            <div className={`${styles['home-text-container']}`}>
                                 <h3>
                                     Te acompañamos en el proceso de
                                     rehabilitación para reincorporarte a tu vida
@@ -83,7 +83,7 @@ const HomePage = () => {
                                     </Button>
                                 </div>
                             </div>
-                            <div className={styles['home-img-container']}>
+                            <div className={`${styles['home-img-container']}`}>
                                 <Image
                                     alt="logo"
                                     src="/images/pngegg.png"
@@ -110,7 +110,9 @@ const HomePage = () => {
                                 src="/images/pngegg.png"
                             />
                         </div>
-                        <div className={styles['diferenciadores-text-container']}>
+                        <div
+                            className={styles['diferenciadores-text-container']}
+                        >
                             <h3>Nuestros diferenciadores</h3>
                             <p className="ft-36">
                                 Somos el mejor centro de Rehabilitación Física y
@@ -174,7 +176,7 @@ const HomePage = () => {
                     <p>Agenda una cita en nuestra Clínica Cefire</p>
                 </div>
                 <div className="container mx-auto">
-                    <div className="grid md:grid-cols-2 gap-10 mx-36 my-20">
+                    <div className="grid md:grid-cols-2 gap-10 md:mx-36 md:my-20">
                         <div className={styles['testimonios-text-container']}>
                             <h3 className={styles['home-subtitle']}>
                                 Testimonios
