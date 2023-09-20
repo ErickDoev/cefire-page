@@ -76,7 +76,7 @@ const HomePage = () => {
                                     className={styles['home-buttons-container']}
                                 >
                                     <Button radius="full" color="primary">
-                                        Quiénes somos?
+                                        ¿Quiénes somos?
                                     </Button>
                                     <Button radius="full" color="secondary">
                                         Tipo de Rehabilitación
@@ -137,7 +137,7 @@ const HomePage = () => {
                                 </p>
                             </div>
                             <Button radius="full" color="primary">
-                                Quiénes somos
+                                ¿Quiénes somos?
                             </Button>
                         </div>
                     </div>
