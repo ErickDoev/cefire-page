@@ -70,13 +70,13 @@ const HomePage = () => {
                                 <h3>
                                     Te acompañamos en el proceso de
                                     rehabilitación para reincorporarte a tu vida
-                                    diaria
+                                    diaria.
                                 </h3>
                                 <div
                                     className={styles['home-buttons-container']}
                                 >
                                     <Button radius="full" color="primary">
-                                        Quiénes somos
+                                        Quiénes somos?
                                     </Button>
                                     <Button radius="full" color="secondary">
                                         Tipo de Rehabilitación

@@ -1,53 +1,36 @@
 import { ContactForm, Footer, HeaderSection } from '@/components/shared';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
+import styles from '@/app/Home.module.css';
 
 const ContactoPage = () => {
     return (
-        <div>
+        <div className='contacto'>
             <HeaderSection title="Contacto" />
-            <section>
+            <section id='contacto' className={styles['contacto-section']}>
                 <div className="container mx-auto">
-                    <div className="grid md:grid-cols-2 gap-26">
-                        <div className="contacto-map-container">
-                            <p>Tlaxcala</p>
-                            <div>
-                                <div className="contacto-icon">
-                                    <FontAwesomeIcon
-                                        color="black"
-                                        icon={faPhone}
-                                    />
-                                </div>
-                                <div className="contacto-dir">
-                                    <p>Insurgente #3</p>
-                                    <p>San Esteban Tizatlan</p>
-                                    <p>Tlaxcala Tlax.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="contacto-icon">
-                                    <FontAwesomeIcon
-                                        color="black"
-                                        icon={faPhone}
-                                    />
-                                </div>
-                                <div className="contacto-dir">
-                                    (246) 137 0462
-                                </div>
-                            </div>
-                            <div>
-                                <div className="contacto-icon">
-                                    <FontAwesomeIcon
-                                        color="black"
-                                        icon={faPhone}
-                                    />
-                                </div>
-                                <div className="contacto-dir">
-                                    (246) 137 0462
-                                </div>
-                            </div>
+                    <div className="grid md:grid-cols-3 gap-26">
+                        <div className='contacto-info-container'>
+                            <FontAwesomeIcon 
+                                icon={ faEnvelope }
+                            />
+                            <p>Email</p>
+                            <p>erick.doev@gmail.com</p>
                         </div>
-                        <div className="contacto-info-container">map</div>
+                        <div className='contacto-info-container'>
+                        <FontAwesomeIcon 
+                                icon={ faMapLocationDot }
+                            />
+                            <p>Email</p>
+                            <p>erick.doev@gmail.com</p>
+                        </div>
+                        <div className='contacto-info-container'>
+                        <FontAwesomeIcon 
+                                icon={ faPhone }
+                            />
+                            <p>Email</p>
+                            <p>erick.doev@gmail.com</p>
+                        </div>
                     </div>
                 </div>
             </section>
