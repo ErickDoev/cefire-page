@@ -12,7 +12,7 @@ import {
     faRadiationAlt,
     faHeart
 } from '@fortawesome/free-solid-svg-icons';
-import { RehabilitationCard } from '@/components/home';
+import { RehabilitationCard } from '@/components/home/cards/RehabilitationCard';
 import { TextCarousel } from '@/components/home/carousel/TextCarousel';
 import { ContactForm, Footer } from '@/components/shared';
 
