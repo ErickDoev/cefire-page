@@ -1,35 +1,36 @@
 import { ContactForm, Footer, HeaderSection } from '@/components/shared';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope, faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
-import styles from '@/app/Home.module.css';
+import {
+    faPhone,
+    faEnvelope,
+    faClock
+} from '@fortawesome/free-solid-svg-icons';
+import styles from './Contacto.module.css';
 
 const ContactoPage = () => {
     return (
-        <div className='contacto'>
+        <div className="contacto">
             <HeaderSection title="Contacto" />
-            <section id='contacto' className={styles['contacto-section']}>
+            <section id="contacto-info" className={styles['contacto-section']}>
                 <div className="container mx-auto">
                     <div className="grid md:grid-cols-3 gap-26">
-                        <div className='contacto-info-container'>
-                            <FontAwesomeIcon 
-                                icon={ faEnvelope }
-                            />
+                        <div className={styles['contacto-info-container']}>
+                            <FontAwesomeIcon icon={faEnvelope} size="2x" />
                             <p>Email</p>
                             <p>erick.doev@gmail.com</p>
                         </div>
-                        <div className='contacto-info-container'>
-                        <FontAwesomeIcon 
-                                icon={ faMapLocationDot }
-                            />
-                            <p>Email</p>
-                            <p>erick.doev@gmail.com</p>
+                        <div className={styles['contacto-info-container']}>
+                            <FontAwesomeIcon icon={faClock} size="2x" />
+                            <p>Horario de clinica</p>
+                            <p>Lunes a Viernes de 10:00 a 18:00</p>
+                            <p>Sábados previa cita</p>
                         </div>
-                        <div className='contacto-info-container'>
-                        <FontAwesomeIcon 
-                                icon={ faPhone }
-                            />
-                            <p>Email</p>
-                            <p>erick.doev@gmail.com</p>
+                        <div className={styles['contacto-info-container']}>
+                            <FontAwesomeIcon icon={faPhone} size="2x" />
+                            <p>Teléfono</p>
+                            <p>(246) 176 1082</p>
+                            <p>(246) 176 1082</p>
+                            <p>(246) 176 1082</p>
                         </div>
                     </div>
                 </div>

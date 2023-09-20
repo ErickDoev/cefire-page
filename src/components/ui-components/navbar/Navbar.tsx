@@ -12,28 +12,26 @@ import {
 } from '@nextui-org/react';
 import { useState } from 'react';
 import NavbarItemComponent from './NavbarItem';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const menuItems = [
     {
-        name: 'Inicio',
+        name: 'INICIO',
         path: '/'
     },
     {
-        name: 'Nosotros',
+        name: 'NOSOTROS',
         path: '/nosotros'
     },
     {
-        name: 'Servicios',
+        name: 'SERVICIOS',
         path: '/servicios'
     },
     {
-        name: 'Contacto',
+        name: 'CONTACTO',
         path: '/contacto'
     },
     {
-        name: 'Aviso de privacidad',
+        name: 'AVISO DE PRIVACIDAD',
         path: '/aviso-de-privacidad'
     }
 ];
@@ -67,7 +65,7 @@ export const NavbarComponent = () => {
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            <NavbarContent className="hidden sm:flex gap-4" justify="end">
                 {menuItems.map((item, i) => (
                     <NavbarItemComponent
                         key={i}
@@ -75,17 +73,6 @@ export const NavbarComponent = () => {
                         name={item.name}
                     />
                 ))}
-            </NavbarContent>
-
-            <NavbarContent justify="end">
-                <NavbarItem>
-                    <FontAwesomeIcon
-                        color="black"
-                        icon={faPhone}
-                        className="mr-3"
-                    />
-                    <Link href="/">(246) 176 10 82</Link>
-                </NavbarItem>
             </NavbarContent>
 
             <NavbarMenu>
