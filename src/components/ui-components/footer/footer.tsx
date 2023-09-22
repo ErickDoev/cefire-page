@@ -8,7 +8,7 @@ export const FooterComponent = () => {
             className={`${styles['footer-section']} bg-primary text-white`}
         >
             <footer className="container mx-auto mb-10">
-                <div className="flex flex-row justify-between justify-items-start">
+                <div className={styles['footer-main-container']}>
                     <div className={styles['footer-info-container']}>
                         <h3>CONTACTO</h3>
                         <p className={styles['footer-bg-gray']}>Teléfonos: </p>
