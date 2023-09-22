@@ -5,7 +5,7 @@ export const ContactForm = () => {
     return (
         <section id="contacto" className={styles['contacto-section']}>
             <div className="container mx-auto">
-                <div className="flex flex-col">
+                <div className={styles['contacto-main-container']}>
                     <div className={`${styles['contacto-text-container']}`}>
                         <h3>CONTÁCTANOS</h3>
                         <p>¿Tienes alguna duda?</p>

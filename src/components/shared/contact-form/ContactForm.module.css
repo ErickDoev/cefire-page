@@ -6,6 +6,11 @@
     background-color: rgb(247, 247, 252);
 }
 
+.contacto-main-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .contacto-text-container {
     display: flex;
     flex-direction: column;
@@ -20,7 +25,7 @@
 
 .contacto-form-container {
     border-radius: 15px;
-    padding: 50px 60px;
+    padding: 0 60px;
     gap: 24px;
     width: 100%;
     display: flex;
@@ -37,4 +42,18 @@
     width: 100%;
     border-radius: 15px;
     padding: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    .contacto-section {
+        padding: 30px;
+    }
+
+    .contacto-main-container {
+        gap: 2rem;
+    }
+
+    .contacto-form-container {
+        padding: 0px;
+    }
 }
