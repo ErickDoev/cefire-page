@@ -59,7 +59,6 @@
 }
 
 .info-text-container li {
-    font-family: 'Poppins', Sans-serif;
     font-size: 15px;
     font-weight: 500;
     color: #5a5a5a;
@@ -72,4 +71,52 @@
 
 .info-img-container {
     border: 1px solid lightgrey;
+}
+/* Descripción */
+
+.descripcion-section {
+    padding: 60px;
+    background-color: rgb(247, 247, 252);
+}
+
+.descripcion-main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.descripcion-left-section {
+    flex: 1;
+}
+
+.descripcion-left-section h2 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.descripcion-left-section p {
+    font-size: 38px;
+    font-weight: 100;
+}
+
+.descripcion-right-section {
+    flex: 1;
+}
+
+.descripcion-right-section p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.descripcion-experiencia-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.descripcion-experiencia-container h2 {
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }

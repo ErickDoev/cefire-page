@@ -3,6 +3,7 @@
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { NextUIProvider } from '@nextui-org/react';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import 'animate.css';
 
 config.autoAddCss = false;
 

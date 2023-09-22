@@ -142,6 +142,66 @@ const AboutPage = () => {
                 </div>
             </section>
 
+            <section id="descripcion" className={styles['descripcion-section']}>
+                <div className="container mx-auto">
+                    <div className={styles['descripcion-main-container']}>
+                        <div className={styles['descripcion-left-section']}>
+                            <h2>Cefire</h2>
+                            <p>
+                                Juntos, podemos mejorar su salud y desarrollar
+                                una relación basada en la confianza.
+                            </p>
+                        </div>
+                        <div className={styles['descripcion-right-section']}>
+                            <p>
+                                Nuestro personal se mantiene a la vanguardia de
+                                la odontología moderna y se esfuerza por
+                                mantenerlo cómodo e informado, para que pueda
+                                estar seguro de que está en manos expertas y ver
+                                nuestro estudio como un santuario. Cada miembro
+                                de nuestro equipo se enfoca en garantizar que
+                                reciba tratamientos claros, compasivos y
+                                agradables.
+                            </p>
+                            <p>
+                                Una visita al consultorio de dental debe ser una
+                                fuente de serenidad, no de ansiedad. Hemos
+                                diseñado un espacio moderno para que sirva como
+                                un oasis de escape y lo hemos equipado con una
+                                estación de té matcha y una celda de meditación
+                                para aquellos que buscan lograr la atención
+                                plena y la tranquilidad antes o después de su
+                                tratamiento.
+                            </p>
+                            <div
+                                className={styles['descripcion-main-container']}
+                            >
+                                <div
+                                    className={
+                                        styles[
+                                            'descripcion-experiencia-container'
+                                        ]
+                                    }
+                                >
+                                    <h2>10+</h2>
+                                    <p>Años de experiencia</p>
+                                </div>
+                                <div
+                                    className={
+                                        styles[
+                                            'descripcion-experiencia-container'
+                                        ]
+                                    }
+                                >
+                                    <h2>1,000+</h2>
+                                    <p>Pacientes Felices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <ContactForm />
         </div>
     );

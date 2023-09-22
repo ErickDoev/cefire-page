@@ -32,6 +32,14 @@
     font-weight: bold;
     line-height: 35px;
     gap: 24px;
+    width: 700px;
+}
+
+.home-text-container h1 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 67px;
+    color: white;
 }
 
 .home-text-container h3 {
@@ -45,6 +53,12 @@
 }
 
 /* Diferenciadores */
+.diferenciadores-main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
 .diferenciadores-section {
     height: auto;
     background-color: rgb(247, 247, 252);
@@ -54,12 +68,15 @@
     padding: 90px 60px;
 }
 
-.diferenciadores-img {
+.diferenciadores-img-container {
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .diferenciadores-text-container {
+    flex: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -87,6 +104,12 @@
     padding: 90px 60px;
 }
 
+.rehabilitaciones-list-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
 .rehabilitation-title {
     font-size: 36px;
     font-weight: bold;
@@ -99,7 +122,26 @@
 .testimonios-section {
 }
 
+.testimonios-main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 60px;
+}
+
+.testimonos-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonios-carousel-container {
+    display: flex;
+    justify-content: center;
+}
+
 .testimonios-text-container {
+    flex-direction: column;
+    display: flex;
     padding-top: 1px;
 }
 
@@ -128,4 +170,55 @@
 
 .testimonios-text {
     padding: 50px 0;
+}
+
+@media screen and (max-width: 767px) {
+    /* Home */
+    .home-text-container {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .home-text-container h3 {
+        text-align: center;
+    }
+
+    /* Diferenciadores */
+
+    .diferenciadores-section {
+        padding: 30px;
+    }
+
+    .diferenciadores-main-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Rehabilicaciones */
+    .rehabilitaciones-section {
+        padding: 30px;
+    }
+
+    .rehabilitaciones-list-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    /* Testimonios */
+
+    .testimonios-main-container {
+        padding: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .testimonios-header-container p {
+        text-align: center;
+    }
+
+    .testimonios-text-container {
+        order: 2;
+        flex-direction: column;
+        align-items: center;
+    }
 }

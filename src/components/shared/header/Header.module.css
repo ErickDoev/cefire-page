@@ -14,7 +14,7 @@
 }
 
 .header-bg-blur {
-    background-color: rgba(3, 94, 252, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
     display: flex;
@@ -24,7 +24,10 @@
 
 .header-text-container {
     display: flex;
-    align-items: center;
+    width: 500px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
 }
 
 .header-text-container h3 {

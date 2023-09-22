@@ -14,8 +14,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { RehaCard } from '@/components/home';
 import { TextCarousel } from '@/components/home/carousel/TextCarousel';
-import { ContactForm, Footer } from '@/components/shared';
-import { FooterComponent } from '@/components/ui-components';
+import { ContactForm } from '@/components/shared';
 
 const rehabilitationTypes = [
     {
@@ -66,31 +65,19 @@ const HomePage = () => {
             <section id="principal" className={styles['home-section']}>
                 <div className={styles['principal-bg-blur']}>
                     <div className="container max-auto">
-                        <div className="grid md:grid-cols-2 gap-20">
-                            <div className={`${styles['home-text-container']}`}>
-                                <h3>
-                                    Te acompañamos en el proceso de
-                                    rehabilitación para reincorporarte a tu vida
-                                    diaria.
-                                </h3>
-                                <div
-                                    className={styles['home-buttons-container']}
-                                >
-                                    <Button radius="full" color="primary">
-                                        ¿Quiénes somos?
-                                    </Button>
-                                    <Button radius="full" color="secondary">
-                                        Tipo de Rehabilitación
-                                    </Button>
-                                </div>
-                            </div>
-                            <div className={`${styles['home-img-container']}`}>
-                                <Image
-                                    alt="logo"
-                                    src="/images/pngegg.png"
-                                    width={400}
-                                    height={400}
-                                />
+                        <div className={`${styles['home-text-container']}`}>
+                            <h1>Cefire</h1>
+                            <h3>
+                                Te acompañamos en el proceso de rehabilitación
+                                para reincorporarte a tu vida diaria.
+                            </h3>
+                            <div className={styles['home-buttons-container']}>
+                                <Button radius="full" color="primary">
+                                    ¿Quiénes somos?
+                                </Button>
+                                <Button radius="full" color="secondary">
+                                    Tipo de Rehabilitación
+                                </Button>
                             </div>
                         </div>
                     </div>
@@ -102,8 +89,10 @@ const HomePage = () => {
                 className={styles['diferenciadores-section']}
             >
                 <div className="container mx-auto">
-                    <div className="grid md:grid-cols-2 gap-20">
-                        <div className={styles['diferenciadores-img']}>
+                    <div className={styles['diferenciadores-main-container']}>
+                        <div
+                            className={styles['diferenciadores-img-container']}
+                        >
                             <Image
                                 width={400}
                                 height={400}
@@ -150,13 +139,17 @@ const HomePage = () => {
                 className={styles['rehabilitaciones-section']}
             >
                 <div className="container mx-auto">
-                    <div className="flex flex-col">
+                    <div className="rehabilitaciones-main-container">
                         <h3
                             className={`${styles['rehabilitation-title']} text-center`}
                         >
                             Tipos de rehabilitación
                         </h3>
-                        <div className="grid grid-cols-4 gap-4">
+                        <div
+                            className={
+                                styles['rehabilitaciones-list-container']
+                            }
+                        >
                             {rehabilitationTypes.map(
                                 ({ name, text, icon }, index) => (
                                     <RehaCard
@@ -177,14 +170,20 @@ const HomePage = () => {
                     <p>Agenda una cita en nuestra Clínica Cefire</p>
                 </div>
                 <div className="container mx-auto">
-                    <div className="grid md:grid-cols-2 gap-10 md:mx-36 md:my-20">
+                    <div className={styles['testimonios-main-container']}>
                         <div className={styles['testimonios-text-container']}>
                             <h3 className={styles['home-subtitle']}>
                                 Testimonios
                             </h3>
-                            <TextCarousel />
+                            <div
+                                className={
+                                    styles['testimonios-carousel-container']
+                                }
+                            >
+                                <TextCarousel />
+                            </div>
                         </div>
-                        <div className="testimonos-img-container">
+                        <div className={styles['testimonos-img-container']}>
                             <Image
                                 width={400}
                                 height={400}

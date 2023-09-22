@@ -11,19 +11,14 @@ export const HeaderSection: FC<Props> = ({ title, image }) => {
     return (
         <section id="nosotros" className={styles['header-section']}>
             <div className={styles['header-bg-blur']}>
-                <div className="container mx-auto">
-                    <div className="grid md:grid-cols-2 gap-20">
-                        <div className="header-img-container">
-                            <Image
-                                width={400}
-                                height={400}
-                                alt="logo"
-                                src="/images/pngegg.png"
-                            />
-                        </div>
-                        <div className={styles['header-text-container']}>
-                            <h3>{title}</h3>
-                        </div>
+                <div className="container mx-auto animate__animated animate__slideInDown">
+                    <div className={styles['header-text-container']}>
+                        <h3>{title}</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Dolorum nostrum quos esse illo dignissimos hic
+                            magnam amet culpa debitis id!
+                        </p>
                     </div>
                 </div>
             </div>
