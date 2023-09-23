@@ -1,17 +1,27 @@
 /* Servicios */
 
-.servicios-section{
+.servicios-section {
     padding: 60px 180px;
 }
 
-.servicios-text-container{
+.servicios-text-container {
     display: flex;
     justify-content: center;
 }
 
-.servicios-text-container h3{
+.servicios-text-container h3 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 0;
     color: royalblue;
+}
+
+@media screen and (max-width: 767px) {
+    .servicios-text-container {
+        text-align: center;
+    }
+
+    .servicios-section {
+        padding: 30px;
+    }
 }

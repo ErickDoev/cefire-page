@@ -24,6 +24,20 @@
 
 .card-text-container p {
     font-size: 16px;
-    font-weight:200;
+    font-weight: 200;
     margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card-text-container p {
+        text-align: justify;
+    }
+
+    .card-text-container h2 {
+        text-align: center;
+    }
 }
