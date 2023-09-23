@@ -11,7 +11,7 @@ const AboutPage = () => {
                 className={`${styles['info-section']} ${styles['info-bg-gray']}`}
             >
                 <div className="container mx-auto">
-                    <div className="flex flex-row items-start justify-center gap-10">
+                    <div className={styles['nosotros-main-section']}>
                         <div className={styles['info-head-container']}>
                             <h3>Misión</h3>
                             <p>

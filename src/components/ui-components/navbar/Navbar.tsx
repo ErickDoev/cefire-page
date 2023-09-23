@@ -4,7 +4,6 @@ import {
     Navbar,
     NavbarBrand,
     NavbarContent,
-    NavbarItem,
     NavbarMenuToggle,
     Link,
     NavbarMenu,
@@ -47,16 +46,14 @@ export const NavbarComponent = () => {
             isMenuOpen={isMenuOpen}
             onMenuOpenChange={setIsMenuOpen}
         >
-            <NavbarContent className="sm:hidden" justify="start">
+            <NavbarContent className="sm:hidden pr-3" justify="start">
+                <NavbarBrand>CEFIRE</NavbarBrand>
+            </NavbarContent>
+
+            <NavbarContent className="sm:hidden" justify="end">
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
                 />
-            </NavbarContent>
-
-            <NavbarContent className="sm:hidden pr-3" justify="start">
-                <NavbarBrand>
-                    <p className="font-bold text-inherit">CEFIRE</p>
-                </NavbarBrand>
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="start">

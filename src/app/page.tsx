@@ -65,7 +65,9 @@ const HomePage = () => {
             <section id="principal" className={styles['home-section']}>
                 <div className={styles['principal-bg-blur']}>
                     <div className="container max-auto">
-                        <div className={`${styles['home-text-container']}`}>
+                        <div
+                            className={`${styles['home-text-container']} animate__animated animate__slideInDown`}
+                        >
                             <h1>Cefire</h1>
                             <h3>
                                 Te acompañamos en el proceso de rehabilitación

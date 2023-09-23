@@ -28,6 +28,7 @@
     flex-direction: column;
     align-items: flex-start;
     color: white;
+    gap: 1rem;
 }
 
 .header-text-container h3 {
@@ -35,4 +36,22 @@
     font-size: 48px;
     font-weight: bold;
     line-height: 46px;
+}
+
+@media screen and (max-width: 767px) {
+    .header-bg-blur {
+        padding: 30px;
+    }
+
+    .header-text-container {
+        width: 100%;
+
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-section {
+        background-position: center;
+    }
 }
