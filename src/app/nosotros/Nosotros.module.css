@@ -1,6 +1,12 @@
 .nosotros {
     width: 100%;
 }
+
+.nosotros-main-section {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
 /* Common */
 
 /* Info */
@@ -127,9 +133,7 @@
     }
 
     .nosotros-main-section {
-        display: flex;
         flex-direction: column;
-        gap: 1rem;
     }
 
     .info-head-container {

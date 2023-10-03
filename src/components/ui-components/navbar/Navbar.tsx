@@ -41,7 +41,7 @@ export const NavbarComponent = () => {
     return (
         <Navbar
             shouldHideOnScroll
-            isBlurred={true}
+            isBlurred={false}
             isBordered={true}
             isMenuOpen={isMenuOpen}
             onMenuOpenChange={setIsMenuOpen}

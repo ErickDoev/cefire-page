@@ -7,7 +7,7 @@ const AboutPage = () => {
         <div className={styles['nosotros']}>
             <HeaderSection title="Nosotros" />
 
-            <section
+            {/* <section
                 className={`${styles['info-section']} ${styles['info-bg-gray']}`}
             >
                 <div className="container mx-auto">
@@ -34,7 +34,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section id="info" className={styles['info-section']}>
                 <div className="container mx-auto">
@@ -72,7 +72,7 @@ const AboutPage = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-10">
+                        {/* <div className="grid md:grid-cols-2 gap-10">
                             <div className={styles['info-img-container']}>
                                 <Image
                                     width={550}
@@ -137,11 +137,10 @@ const AboutPage = () => {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
-
             <section id="descripcion" className={styles['descripcion-section']}>
                 <div className="container mx-auto">
                     <div className={styles['descripcion-main-container']}>
@@ -154,24 +153,19 @@ const AboutPage = () => {
                         </div>
                         <div className={styles['descripcion-right-section']}>
                             <p>
-                                Nuestro personal se mantiene a la vanguardia de
-                                la odontología moderna y se esfuerza por
-                                mantenerlo cómodo e informado, para que pueda
-                                estar seguro de que está en manos expertas y ver
-                                nuestro estudio como un santuario. Cada miembro
-                                de nuestro equipo se enfoca en garantizar que
-                                reciba tratamientos claros, compasivos y
-                                agradables.
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Tempore, doloribus deleniti
+                                eos doloremque sed placeat eius odio mollitia
+                                consequuntur dolore aliquid repellendus ipsum
+                                non cum asperiores animi! Hic, quia aliquid.
                             </p>
                             <p>
-                                Una visita al consultorio de dental debe ser una
-                                fuente de serenidad, no de ansiedad. Hemos
-                                diseñado un espacio moderno para que sirva como
-                                un oasis de escape y lo hemos equipado con una
-                                estación de té matcha y una celda de meditación
-                                para aquellos que buscan lograr la atención
-                                plena y la tranquilidad antes o después de su
-                                tratamiento.
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae eum nisi illo
+                                mollitia eos aut nulla eligendi accusamus
+                                tenetur odit autem odio, dignissimos doloribus,
+                                eius, numquam sapiente optio blanditiis?
+                                Sapiente.
                             </p>
                             <div
                                 className={styles['descripcion-main-container']}
@@ -201,7 +195,6 @@ const AboutPage = () => {
                     </div>
                 </div>
             </section>
-
             <ContactForm />
         </div>
     );
