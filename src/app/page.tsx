@@ -74,10 +74,20 @@ const HomePage = () => {
                                 para reincorporarte a tu vida diaria.
                             </h3>
                             <div className={styles['home-buttons-container']}>
-                                <Button radius="full" color="primary">
+                                <Button
+                                    radius="full"
+                                    color="primary"
+                                    variant="solid"
+                                    className="text-primary-900"
+                                >
                                     ¿Quiénes somos?
                                 </Button>
-                                <Button radius="full" color="secondary">
+                                <Button
+                                    radius="full"
+                                    color="secondary"
+                                    variant="solid"
+                                    className="text-primary-900"
+                                >
                                     Tipo de Rehabilitación
                                 </Button>
                             </div>
@@ -105,7 +115,9 @@ const HomePage = () => {
                         <div
                             className={styles['diferenciadores-text-container']}
                         >
-                            <h3>Nuestros diferenciadores</h3>
+                            <h3 className="text-primary">
+                                Nuestros diferenciadores
+                            </h3>
                             <p className="ft-36">
                                 Somos el mejor centro de Rehabilitación Física y
                                 Medicina del Deporte en México.
@@ -143,7 +155,7 @@ const HomePage = () => {
                 <div className="container mx-auto">
                     <div className="rehabilitaciones-main-container">
                         <h3
-                            className={`${styles['rehabilitation-title']} text-center`}
+                            className={`${styles['rehabilitation-title']} text-center text-primary`}
                         >
                             Tipos de rehabilitación
                         </h3>
@@ -168,15 +180,15 @@ const HomePage = () => {
             </section>
 
             <section id="testimonios" className={styles['testimonios-section']}>
-                <div className={styles['testimonios-header-container']}>
+                <div
+                    className={`${styles['testimonios-header-container']} bg-background-700`}
+                >
                     <p>Agenda una cita en nuestra Clínica Cefire</p>
                 </div>
                 <div className="container mx-auto">
                     <div className={styles['testimonios-main-container']}>
                         <div className={styles['testimonios-text-container']}>
-                            <h3 className={styles['home-subtitle']}>
-                                Testimonios
-                            </h3>
+                            <h3 className="text-primary">Testimonios</h3>
                             <div
                                 className={
                                     styles['testimonios-carousel-container']

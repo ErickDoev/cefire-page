@@ -48,6 +48,7 @@ const config: Config = {
             800: '#17314f',
             900: '#0b1928',
             950: '#060c14',
+            DEFAULT: "#397bc6"
           },
           primary: {
             50: '#e5f2ff',

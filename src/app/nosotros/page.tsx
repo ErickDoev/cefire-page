@@ -49,12 +49,16 @@ const AboutPage = () => {
                                 />
                             </div>
                             <div className={styles['info-text-container']}>
-                                <h2>Lic. Elliut Misael Cruz Trinidad</h2>
-                                <h3>Pregrado</h3>
+                                <h2 className="text-primary">
+                                    Lic. Elliut Misael Cruz Trinidad
+                                </h2>
+                                <h3 className="text-primary">Pregrado</h3>
                                 <ul>
                                     <li>Neurorehabilitacon</li>
                                 </ul>
-                                <h3>Certificaciones</h3>
+                                <h3 className="text-primary">
+                                    Certificaciones
+                                </h3>
                                 <ul>
                                     <li>Diplomados Impants en México.</li>
                                     <li>
@@ -62,7 +66,7 @@ const AboutPage = () => {
                                         Bucal.
                                     </li>
                                 </ul>
-                                <h3>Sociedades</h3>
+                                <h3 className="text-primary">Sociedades</h3>
                                 <ul>
                                     <li>American Dental Association.</li>
                                     <li>

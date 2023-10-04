@@ -53,7 +53,9 @@ const ServiciosPage = () => {
                 <div className="container mx-auto">
                     <div className="flex flex-col gap-16">
                         <div className={styles['servicios-text-container']}>
-                            <h3>Servicios de Rehabilitación</h3>
+                            <h3 className="text-primary">
+                                Servicios de Rehabilitación
+                            </h3>
                         </div>
                         {services.map((service, i) => (
                             <ServiceCard

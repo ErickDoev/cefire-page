@@ -17,13 +17,13 @@ export const RehaCard: FC<Props> = ({ name, text, icon }) => {
                 <p className={styles['card-header']}>{name}</p>
             </CardHeader>
             <CardBody className="items-center gap-4">
-                <div className={styles['icon']}>
+                <div className={`${styles['icon']} bg-background-700`}>
                     <FontAwesomeIcon size="2x" color="white" icon={icon} />
                 </div>
                 <p className="text-center">{text}</p>
             </CardBody>
             <CardFooter className="flex justify-center">
-                <Button radius="full" color="secondary" size="lg">
+                <Button radius="full" color="primary" size="lg">
                     Más información
                 </Button>
             </CardFooter>
