@@ -1,19 +1,21 @@
 .card-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 .card-img-container {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 10px solid royalblue;
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
 }
 
 .card-text-container {
     flex: 1;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-text-container h2 {

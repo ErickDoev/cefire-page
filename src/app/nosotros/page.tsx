@@ -40,7 +40,7 @@ const AboutPage = () => {
                 <div className="container mx-auto">
                     <div className="flex flex-col gap-10">
                         <div className="grid md:grid-cols-2 gap-10">
-                            <div className={styles['info-img-container']}>
+                            <div className="shadow-primary">
                                 <Image
                                     width={550}
                                     height={525}
